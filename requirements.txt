@@ -1,0 +1,43 @@
+# Core LangChain Stack
+langchain==0.2.17
+langchain-community==0.2.19
+langchain-core==0.2.43
+langchain-huggingface==0.0.3
+
+# Retrieval + Embeddings
+faiss-cpu
+sentence-transformers
+huggingface-hub
+transformers
+torch
+
+# PDF Parsing
+PyPDF2
+pdfplumber        # Optional: PyMuPDF is fine too
+PyMuPDF           # aka fitz
+# pdfminer.six    # Commented out unless you're explicitly using it
+
+# Environment handling
+python-dotenv
+
+# Voice support (Optional)
+whisper
+pyttsx3
+
+# Utilities
+tiktoken
+
+# Local LLM runtime
+llama-cpp-python==0.3.14
+
+# Web app
+streamlit
+
+
+# spech recognition
+SpeechRecognition pyaudio
+
+# text to speech
+pyttsx3
+
+sentence-transformers
