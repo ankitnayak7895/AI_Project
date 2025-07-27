@@ -1,5 +1,7 @@
-import pyttsx3
+import gradio as gr
 
-engine = pyttsx3.init()
-engine.say("Hello, this is a TTS test")
-engine.runAndWait()
+def transcribe(audio):
+    return "Audio received!"
+
+demo = gr.Interface(fn=transcribe, inputs=gr.Audio(sources="microphone", type="filepath"), outputs="text")
+demo.launch(share=True)  # use share=True to get HTTPS
